@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt,arial]{scrartcl}
+\usepackage[utf8]{inputenc}
+\newcommand{\Name}{}
+\newcommand{\Strasse}{}
+\newcommand{\Ort}{}
+\newcommand{\PLZ}{}
+\newcommand{\Schule}{}
+\newcommand{\Leistungskurs}{}
+\newcommand{\Betreuer}{}
+\newcommand{\Thema}{}
+
+
+\usepackage{graphicx}
+\usepackage{scrlayer-scrpage, lastpage}
+\usepackage[a4paper,margin=2.5cm,left=3cm,footskip=0.5cm]{geometry}
+\setkomafont{pageheadfoot}{\large\textrm}
+\lohead{}
+\rohead{}
+\cfoot*{\thepage{}}
+\usepackage{setspace}
+\onehalfspacing
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.5\textwidth]{}\par\vspace{1cm}
+	{\scshape\LARGE \Schule \par}
+	\vspace{1cm}
+	{\scshape\Large Facharbeit im Leistungskurs \Leistungskurs\par}
+	\vspace{1.5cm}
+	{\huge\bfseries \Thema\par}
+	\vspace{2cm}
+	{\Large\itshape \Name\par}
+	\small{\Strasse, \PLZ \space \Ort}
+	\vfill
+\par
+	betreut von\par
+	\Betreuer
+
+\end{titlepage}
+
+\section{Kurzfassung}
+
+\section{Inhaltsverzeichnis}
+
+\section{Einleitung}
+\section{Hauptteil}
+\section{Fazit}
+\section{Anhang}
+\section{Erklärung über die selbständige Anfertigung der Arbeit}
+Hiermit erkläre ich, dass ich die vorliegende Arbeit selbstständig und ohne fremde Hilfe verfasst, alle aus anderen Werken wörtlich oder sinngemäß entnommenen Stellen und Abbildungen unter Angabe der Quelle als Entlehnung kenntlich gemacht und keine anderen Hilfsmittel als die angegebenen verwendet habe. \\
+\Ort, \today \space \Name
+
+
+\end{document}
